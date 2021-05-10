@@ -1,3 +1,6 @@
+# Email Evaluation program for patient capacity indicator display
+# Version 0.4 - 5/8/21
+
 from pythonping import ping # Used to ping an IP address to check network connection; will be included in next version
 import email
 import imaplib # Email and imaplib libraries used to check email and its contents
