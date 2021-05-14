@@ -2,7 +2,7 @@
 <p>Code and documentation for Patient Capacity Level Indicator devices and software. Under ongoing development in collaboration with Denver Health.</p>
 <p>The project presently uses a Raspberry Pi Zero W V. 1.1 and a 32GB microSDHC card. <strong>https://www.raspberrypi.org/products/raspberry-pi-zero-w/</strong></br>
 Current OS used: Raspberry Pi Lite, kernel version 5.10; see <strong>https://www.raspberrypi.org/software/operating-systems/</strong></p>
-<p><strong>Details of files included in this repository:</strong></p>
+<h2>Details of files included in this repository:</h2>
 <p><strong>email_eval_commented.py</strong> - This is the custom Python program used for evaluating alert status emails and updating the LEDs. Detailed comments are included within that code that describe various operations.</p>
 <p><strong>prototype_wiring_diagram.jpg</strong> - A wiring diagram of the project's prototype, created with Fritzing and Adobe Illustrator.</p>
 <p><strong>capacity_indicator_levels_demo.mp4</strong> - A short video that shows the appearance of each alert level on the display.</p>
@@ -11,3 +11,6 @@ Current OS used: Raspberry Pi Lite, kernel version 5.10; see <strong>https://www
 <p><strong>crontab</strong> - This text file is used by the Pi OS cron function to automate commands to be executed at recurring intervals. In this case, it runs two programs every minute to check wireless connection (and restart wifi if needed), and to check for new capacity level alert emails and update the LEDs of the display. Comments are included in the code that provide further details. For more information on using cron and crontab on a Pi or in Linux, see https://www.raspberrypi.org/documentation/linux/usage/cron.md</p>
 <p><strong>wpa_supplicant.conf</strong> - This file sets which wireless network the Pi connects to on startup. See https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md for more information.</p>
 <p><strong>checkwifi.sh</strong> - This program is repeatedly run by the cron function. It checks the current wireless connection status and restarts the Pi's wifi if needed. The code contains comments with more details, and originated from this blog post by Thijs Bernolet: https://weworkweplay.com/play/rebooting-the-raspberry-pi-when-it-loses-wireless-connection-wifi/</p>
+<h2>Other useful resources:</h2>
+<p><strong>https://www.raspberrypi.org/documentation/raspbian/updating.md</strong> - This page explains the process for updating and upgrading the OS used by the Pi Zero.</p>
+<p><strong>https://learn.adafruit.com/adafruit-neopixel-uberguide</strong> - This tutorial provides instructions on controlling the LED strips used in the prototype (WS2812b) with Python.
