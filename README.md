@@ -1,6 +1,6 @@
 # Capacity Indicator
 <p>Code and documentation for Patient Capacity Level Indicator devices and software. Under ongoing development in collaboration with Denver Health.</p>
-<p>The project presently uses a Raspberry Pi Zero W V. 1.1 and a 32GB microSDHC card. <strong>https://www.raspberrypi.org/products/raspberry-pi-zero-w/</strong></br>
+<p>The project presently uses a Raspberry Pi Zero W V. 1.1 and a 32GB microSDHC card. <strong><a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target="_blank">https://www.raspberrypi.org/products/raspberry-pi-zero-w/</a></strong></br>
 Current OS used: Raspberry Pi Lite, kernel version 5.10; see <strong>https://www.raspberrypi.org/software/operating-systems/</strong></p>
 <h2>Details of files included in this repository:</h2>
 <p><strong>email_eval_commented.py</strong> - This is the custom Python program used for evaluating alert status emails and updating the LEDs. Detailed comments are included within that code that describe various operations.</p>
